@@ -32,7 +32,7 @@ interface McpToolExport {
 
 const BASE_URL = 'https://tastedive.com/api/similar';
 
-const TYPES = ['music', 'movies', 'shows', 'books', 'authors', 'games', 'podcasts'] as const;
+const TYPES = ['music', 'movie', 'show', 'book', 'game', 'podcast', 'person', 'place', 'brand'] as const;
 
 const tools: McpToolExport['tools'] = [
   {
@@ -48,8 +48,8 @@ const tools: McpToolExport['tools'] = [
         },
         type: {
           type: 'string',
-          description: 'Restrict to one category',
-          enum: ['music', 'movies', 'shows', 'books', 'authors', 'games', 'podcasts'],
+          description: 'Restrict to one category. Note: types are singular (movie, show, book), not plural.',
+          enum: ['music', 'movie', 'show', 'book', 'game', 'podcast', 'person', 'place', 'brand'],
         },
         limit: { type: 'number', description: '1-50 (default 20)' },
         include_info: { type: 'boolean', description: 'Add description + Wikipedia URL (default false)' },
