@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-tastedive",
+  "version": "0.1.0",
+  "description": "TasteDive MCP — cross-media recommendations (free with key)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tastedive"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-tastedive"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
